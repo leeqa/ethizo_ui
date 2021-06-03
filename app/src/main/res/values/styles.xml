@@ -12,5 +12,18 @@
         <item name="colorControlActivated">@color/summary_text_color</item>
     </style>
 
+    <style name="textTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="textHeading" parent="textTitle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+    </style>
+
+
+
 
 </resources>

@@ -23,13 +23,10 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/textHeading"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="@dimen/_5sdp"
-                android:text="Non-Smoking Tobacco Use"
-                android:textSize="@dimen/_13sdp" />
-
+                android:text="Non-Smoking Tobacco Use" />
             <include
                 android:id="@+id/layoutCigarette"
                 layout="@layout/tobacco_usage"
@@ -52,10 +49,10 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/textTitle"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
                     android:text="Tabacco Use Status" />
                 <include
                     android:layout_marginStart="@dimen/_5sdp"
