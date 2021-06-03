@@ -1,9 +1,11 @@
-package com.gujranwala.ethizo_ui_muneeb.Fragments;
+package com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
@@ -11,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.gujranwala.ethizo_ui_muneeb.R;
 
 public class NonSmokingTobacco extends Fragment {
+
 
     public NonSmokingTobacco() {
         // Required empty public constructor
@@ -32,7 +35,8 @@ public class NonSmokingTobacco extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        return DataBindingUtil.inflate(getLayoutInflater(), R.layout.fragment_non_smoking_tobacco, container, false).getRoot();
-//        return inflater.inflate(R.layout.fragment_non_smoking_tobacco, container, false);
+        View view = inflater.inflate(R.layout.fragment_non_smoking_tobacco, container, false);
+
+        return view;
     }
 }

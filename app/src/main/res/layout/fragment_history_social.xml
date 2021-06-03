@@ -15,86 +15,30 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_5sdp"
-                app:cardCornerRadius="@dimen/_5sdp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/black"
-                            android:padding="@dimen/_5sdp"
-                            android:text="Have you ever used tobacco?"
-                            android:textSize="@dimen/_13sdp" />
-
-                        <ImageView
-                            android:id="@+id/imageView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginRight="@dimen/_5sdp" />
-                    </LinearLayout>
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:id="@+id/radioButton"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="No/Never"
-                            android:textSize="@dimen/_10sdp" />
-
-                        <RadioButton
-                            android:id="@+id/radioButton2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Yes"
-                            android:textSize="@dimen/_10sdp" />
-
-                        <RadioButton
-                            android:id="@+id/radioButton3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Unknown"
-                            android:textSize="@dimen/_10sdp" />
-                    </RadioGroup>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+            android:orientation="vertical">
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/smokingFragment"
-                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.SmokingTobacco"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco.SmokingNonSmokingFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
-
             </androidx.fragment.app.FragmentContainerView>
 
+
             <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/nonSmokingFragment"
-                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.NonSmokingTobacco"
+                android:id="@+id/effortsToQuitTobacco"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco.EffortsToQuitTobacco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                layout="@layout/save_and_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/TobaccoCessationInformation"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco.TobaccoCessationInformation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -102,7 +46,15 @@
                 layout="@layout/save_and_clear_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/PassiveExposure"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco.PassiveExposure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <include
+                layout="@layout/save_and_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

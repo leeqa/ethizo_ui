@@ -1,4 +1,4 @@
-package com.gujranwala.ethizo_ui_muneeb.Fragments;
+package com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco;
 
 import android.os.Bundle;
 
@@ -10,18 +10,18 @@ import android.view.ViewGroup;
 
 import com.gujranwala.ethizo_ui_muneeb.R;
 
-public class HistorySocialFragment extends Fragment {
+
+public class TobaccoCessationInformation extends Fragment {
 
 
-    public HistorySocialFragment() {
+    public TobaccoCessationInformation() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_history_social, container, false);
-
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_tobacco_cessation_information, container, false);
     }
 }

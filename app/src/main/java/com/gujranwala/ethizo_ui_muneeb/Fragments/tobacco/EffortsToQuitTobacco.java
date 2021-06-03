@@ -1,4 +1,4 @@
-package com.gujranwala.ethizo_ui_muneeb.Fragments;
+package com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco;
 
 import android.os.Bundle;
 
@@ -10,17 +10,20 @@ import android.view.ViewGroup;
 
 import com.gujranwala.ethizo_ui_muneeb.R;
 
-public class HistorySocialFragment extends Fragment {
+public class EffortsToQuitTobacco extends Fragment {
 
 
-    public HistorySocialFragment() {
+    public EffortsToQuitTobacco() {
         // Required empty public constructor
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_history_social, container, false);
+        View view = inflater.inflate(R.layout.fragment_efforts_to_quit_tobacco, container, false);
+
+
 
         return view;
     }
