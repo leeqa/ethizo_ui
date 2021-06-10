@@ -28,7 +28,6 @@ public class SmokingTobacco extends Fragment {
     public static SmokingTobacco newInstance(String param1, String param2) {
         SmokingTobacco fragment = new SmokingTobacco();
         Bundle args = new Bundle();
-
         fragment.setArguments(args);
         return fragment;
     }
