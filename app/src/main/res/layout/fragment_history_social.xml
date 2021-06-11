@@ -32,20 +32,12 @@
                 android:layout_height="wrap_content" />
 
 
-            <include
-                layout="@layout/save_and_clear_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/TobaccoCessationInformation"
                 android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco.TobaccoCessationInformation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <include
-                layout="@layout/save_and_clear_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/PassiveExposure"
                 android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.tobacco.PassiveExposure"
@@ -87,6 +79,9 @@
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
+
+           </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 
 

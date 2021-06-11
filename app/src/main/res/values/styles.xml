@@ -23,7 +23,9 @@
         <item name="android:paddingStart">@dimen/_5sdp</item>
     </style>
 
-
+<style name="color">
+    <item name="android:textColor">@color/black</item>
+</style>
 
 
 </resources>
