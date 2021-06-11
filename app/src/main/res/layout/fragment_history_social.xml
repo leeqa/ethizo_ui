@@ -55,6 +55,37 @@
                 layout="@layout/save_and_clear_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/SleepPatternsFragment"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.Lifestyle.SleepPatternsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/LifeStyleFragment"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.Lifestyle.LifeStyleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/ReligiousFragment"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.Lifestyle.ReligiousFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/SafetyFragment"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.Lifestyle.SafetyFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/RecentTravelFragment"
+                android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.Lifestyle.RecentTravelFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
