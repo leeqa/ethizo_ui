@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_5sdp"
+    tools:context=".fragments.tobacco.SmokingTobaccoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/textHeading"
+            android:layout_weight="1"
+            android:text="Smoking Tobacco Use" />
+
+        <LinearLayout
+            android:id="@+id/ll_tobacco_usages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layoutCigarette"
+                layout="@layout/tobacco_usage" />
+
+            <include
+                android:id="@+id/layoutCigars"
+                layout="@layout/tobacco_usage" />
+
+            <include
+                android:id="@+id/layoutPipe"
+                layout="@layout/tobacco_usage" />
+
+            <include
+                android:id="@+id/layoutElectronicCigarettes"
+                layout="@layout/tobacco_usage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/textTitle"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="Smoking Status" />
+
+            <include
+                layout="@layout/custom_spinner_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

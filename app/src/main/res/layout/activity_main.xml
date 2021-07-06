@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/history"
-        android:name="com.gujranwala.ethizo_ui_muneeb.Fragments.HistorySocialFragment"
+        android:name="com.ethizo.socialhistory.fragments.HistorySocialFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />

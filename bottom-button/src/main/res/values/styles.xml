@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HintTextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/summary_text_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textSize">14sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/summary_text_color</item>
+        <item name="colorControlNormal">@color/summary_text_color</item>
+        <item name="colorControlActivated">@color/summary_text_color</item>
+    </style>
+
+    <style name="textTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="textHeading" parent="textTitle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+    </style>
+
+<style name="color">
+    <item name="android:textColor">@color/black</item>
+</style>
+
+
+</resources>

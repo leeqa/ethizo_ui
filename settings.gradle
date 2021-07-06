@@ -1,2 +1,4 @@
 include ':app'
 rootProject.name = "ethizo_ui_muneeb"
+include ':socialhistory'
+include ':bottom-button'
