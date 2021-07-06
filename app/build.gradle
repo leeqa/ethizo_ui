@@ -51,4 +51,5 @@ dependencies {
 
     implementation project(':socialhistory')
     implementation project(':bottom-button')
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
