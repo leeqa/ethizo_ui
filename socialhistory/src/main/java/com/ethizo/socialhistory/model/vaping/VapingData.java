@@ -2,7 +2,7 @@ package com.ethizo.socialhistory.model.vaping;
 
 import com.google.gson.annotations.SerializedName;
 
-public class VapingModel {
+public class VapingData {
 
     public String updated;
     @SerializedName("vaping_without_nicotine")

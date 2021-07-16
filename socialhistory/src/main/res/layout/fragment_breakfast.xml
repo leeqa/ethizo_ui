@@ -7,115 +7,88 @@
     android:orientation="vertical"
     tools:context=".fragments.DietHistory.BreakfastFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        style="@style/textHeading"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Breakfast" />
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_5sdp"
-        app:cardCornerRadius="@dimen/_5sdp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/_5sdp">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_margin="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_weight="1"
-                    android:text="Date"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-
-                <include
-                    layout="@layout/floating_label_input_layout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
 
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:text="Breakfast"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_10sdp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
-            <include layout="@layout/floating_label_input_layout" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Date"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
 
-            <include layout="@layout/floating_label_input_layout" />
-
-            <include layout="@layout/floating_label_input_layout" />
-
-            <include layout="@layout/floating_label_input_layout" />
-
-            <include layout="@layout/floating_label_input_layout" />
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:text="Serving"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_10sdp" />
-
-            <include layout="@layout/custom_spinner_layout" />
-
-            <include layout="@layout/custom_spinner_layout" />
-
-            <include layout="@layout/custom_spinner_layout" />
-
-            <include layout="@layout/custom_spinner_layout" />
-
-            <include layout="@layout/custom_spinner_layout" />
+                        <include
+                            android:id="@+id/edtDate"
+                            layout="@layout/floating_label_input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
 
 
+                    </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:text="Measure"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_10sdp" />
+                    <include
+                        android:id="@+id/item1"
+                        layout="@layout/diet_data" />
 
-            <include layout="@layout/floating_label_input_layout" />
+                    <include
+                        android:id="@+id/item2"
+                        layout="@layout/diet_data" />
 
-            <include layout="@layout/floating_label_input_layout" />
+                    <include
+                        android:id="@+id/item3"
+                        layout="@layout/diet_data" />
 
-            <include layout="@layout/floating_label_input_layout" />
+                    <include
+                        android:id="@+id/item4"
+                        layout="@layout/diet_data" />
 
-            <include layout="@layout/floating_label_input_layout" />
+                    <include
+                        android:id="@+id/item5"
+                        layout="@layout/diet_data" />
 
-            <include layout="@layout/floating_label_input_layout" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
 
-
+            <include layout="@layout/save_and_clear_button" />
         </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-
-    <include layout="@layout/save_and_clear_button"/>
+    </ScrollView>
 
 </LinearLayout>
