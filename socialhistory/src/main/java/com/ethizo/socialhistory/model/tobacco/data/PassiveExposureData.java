@@ -1,13 +1,11 @@
-package com.ethizo.socialhistory.model.tobacco;
+package com.ethizo.socialhistory.model.tobacco.data;
 
-import com.ethizo.socialhistory.model.BaseHistory;
-import com.ethizo.socialhistory.model.tobacco.data.PassiveExposureData;
 import com.google.gson.annotations.SerializedName;
 
 import static com.ethizo.socialhistory.utilities.Utils.boolToStr;
 import static com.ethizo.socialhistory.utilities.Utils.strToBool;
 
-public class PassiveExposure extends BaseHistory<PassiveExposureData>{
+public class PassiveExposureData{
 
     public String type, comments;
 
@@ -25,13 +23,9 @@ public class PassiveExposure extends BaseHistory<PassiveExposureData>{
     @SerializedName("other_exposure_locations")
     public String otherLocations;
 
-    public PassiveExposure() {
-        section = "tobacco_use";
-        confidential = 0;
-        subSection = "passive_exposure";
-        historyType = "social_history";
-        //Override json_data
-        data = new PassiveExposureData();
+    public PassiveExposureData() {
+        type = "sadsad";
+        comments = "sadsad";
     }
 
     public boolean getIsPassiveSmoker() {
@@ -57,5 +51,4 @@ public class PassiveExposure extends BaseHistory<PassiveExposureData>{
     public void setIsInHome(boolean isInHome) {
         this.isInHome = boolToStr(isInHome);
     }
-
 }

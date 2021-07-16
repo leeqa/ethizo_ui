@@ -1,8 +1,8 @@
-package com.ethizo.socialhistory.model;
+package com.ethizo.socialhistory.model.tobacco;
 
 import com.google.gson.annotations.SerializedName;
 
-public class SmokingTobacco {
+public class TobaccoUse {
 
 
     public String name;
@@ -19,5 +19,4 @@ public class SmokingTobacco {
     public String ageStarted;
     @SerializedName("age_stopped")
     public String ageStopped;
-
 }

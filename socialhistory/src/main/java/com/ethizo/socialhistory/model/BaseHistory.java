@@ -3,8 +3,7 @@ package com.ethizo.socialhistory.model;
 import com.ethizo.socialhistory.utilities.Constants;
 import com.google.gson.annotations.SerializedName;
 
-public class BaseHistory {
-
+public abstract class BaseHistory<T> {
     public String pid, section;
     public int confidential;
 
@@ -15,16 +14,5 @@ public class BaseHistory {
     @SerializedName("history_type")
     public String historyType;
     @SerializedName("json_data")
-    public Object data;
-
-    protected boolean strToBool(String value){
-        if(value == null)
-            return false;
-        return value.equalsIgnoreCase(Constants.YES);
-    }
-
-    protected String boolToStr(boolean value){
-        return value ? Constants.YES : Constants.NO;
-    }
-
+    public T data;
 }
